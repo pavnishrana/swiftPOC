@@ -2,7 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,36 +40,31 @@
             </objects>
             <point key="canvasLocation" x="-39" y="4"/>
         </scene>
-        <!--Second View Controller-->
-        <scene sceneID="j4d-C2-mh4">
+        <!--Second Screen-->
+        <scene sceneID="gCn-9l-Nk2">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="jpg-R5-6Kv" customClass="SecondViewController" customModule="SwiftPOC" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RAo-SM-KBz">
+                <viewController storyboardIdentifier="SecondScreen" id="yJG-Vo-q73" customClass="SecondScreen" customModule="SwiftPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YAr-fg-lao">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cc9-eL-zbS">
-                                <rect key="frame" x="108" y="409" width="177" height="34"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Back To Home Screen">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onTapped:" destination="jpg-R5-6Kv" eventType="touchUpInside" id="CgW-Ig-rv4"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="RN Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Qb-s8-WAC">
+                                <rect key="frame" x="148" y="409" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="nn9-dd-Szc"/>
+                        <viewLayoutGuide key="safeArea" id="pXQ-hQ-BhV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="cc9-eL-zbS" firstAttribute="centerY" secondItem="RAo-SM-KBz" secondAttribute="centerY" id="JO6-IQ-JQR"/>
-                            <constraint firstItem="cc9-eL-zbS" firstAttribute="centerX" secondItem="RAo-SM-KBz" secondAttribute="centerX" id="lxx-ot-Al0"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="6Qb-s8-WAC" id="5Yr-b0-bE2"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6iS-bd-SkO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="huY-eL-5zH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="743" y="2"/>
+            <point key="canvasLocation" x="-540" y="-974"/>
         </scene>
     </scenes>
     <resources>
